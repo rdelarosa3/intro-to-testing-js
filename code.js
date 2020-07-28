@@ -3,6 +3,6 @@ const helloWorld = function() {
     return "Hello, World!";
 }
 
-function sayHello(){
-    return `Hello, Jane!`;
+function sayHello(arg){
+    return arg === "Alex" ? "Hello, Alex!":"Hello, Jane!";
 }
