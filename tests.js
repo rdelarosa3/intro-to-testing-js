@@ -52,5 +52,14 @@ describe('sayHello',function(){
     it('should return the string "Hello, World!" when "" is passed and executed', function(){
         expect(sayHello("")).toBe("Hello, World!");
     });
+    it('should return the string "Hello, World!" when array is passed and executed', function(){
+        expect(sayHello([])).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when object is passed and executed', function(){
+        expect(sayHello({})).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when function is passed and executed', function(){
+        expect(sayHello(helloWorld)).toBe("Hello, World!");
+    });
 
 });

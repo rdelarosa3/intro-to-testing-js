@@ -4,22 +4,5 @@ const helloWorld = function() {
 }
 
 function sayHello(arg){
-    if(arg === undefined || typeof arg === "boolean"){
-        return "Hello, World!";
-    }
-    else if(arg === "5"){
-        return "Hello, World!";
-    }
-    else if(arg === 2.3){
-        return "Hello, World!";
-    }
-    else if(arg === ""){
-        return "Hello, World!";
-    }
-    else if(arg === null){
-        return "Hello, World!";
-    }
-    else{
-        return `Hello, ${arg}!`;
-    }
+    return typeof(arg)==="string" && isNaN(arg) ? `Hello, ${arg}!`: "Hello, World!";
 }
