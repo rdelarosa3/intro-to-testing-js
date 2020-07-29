@@ -63,3 +63,40 @@ describe('sayHello',function(){
     });
 
 });
+
+// Unit test for the isEven function
+describe('isEven',function() {
+    it('should be a defined function', function () {
+        expect(typeof isEven).toBe('function');
+    });
+    it('should be a boolean when called', function(){
+        expect(typeof isEven()).toBe('boolean');
+    });
+    it('should return true when isEven(2) executed', function(){
+        expect(isEven(2)).toBe(true);
+    });
+    it('should return true when isEven(-4) executed', function(){
+        expect(isEven(-4)).toBe(true);
+    });
+    it('should return false when isEven(3) executed', function(){
+        expect(isEven(3)).toBe(false);
+    });
+    it('should return false when isEven("banana") executed', function(){
+        expect(isEven("banana")).toBe(false);
+    });
+    it('should return true when isEven("8") executed', function(){
+        expect(isEven("8")).toBe(true);
+    });
+    it('should return false when isEven(Infinity) executed', function(){
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it('should return false when isEven(true) executed', function(){
+        expect(isEven(true)).toBe(false);
+    });
+    it('should return false when isEven(false) executed', function(){
+        expect(isEven(false)).toBe(false);
+    });
+    it('should return false when executed without argument', function(){
+        expect(isEven()).toBe(false);
+    });
+});
