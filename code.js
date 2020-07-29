@@ -12,28 +12,20 @@ function isEven(arg) {
 }
 
 function isVowel(arg){
-    if(arg === "a"){
-        return true;
-    }
-    else if(arg === "A"){
-        return true;
-    }
-    else if(arg === "y"){
-        return false;
-    }
-    else if(arg === 4){
-        return false;
-    }
-    else if(arg === "banana"){
-        return false;
-    }
-    else if(arg === true){
-        return false;
-    }
-    else if(arg === false){
-        return false;
-    }
-    else{
-        return true;
+    let vowel;
+    typeof(arg) === "string" ? vowel = arg.toLowerCase(): false;
+    switch(vowel) {
+        case "a":
+            return true;
+        case "e":
+            return true;
+        case "i":
+            return true;
+        case "o":
+            return true;
+        case "u":
+            return true;
+        default:
+            return false;
     }
 }
