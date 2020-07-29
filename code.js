@@ -29,3 +29,7 @@ function isVowel(arg){
             return false;
     }
 }
+
+function add(arg,arg1){
+    return parseInt(arg)+ parseInt(arg1);
+}
